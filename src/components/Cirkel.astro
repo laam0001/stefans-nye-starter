@@ -1,0 +1,26 @@
+---
+import { Image } from 'astro:assets';
+import cirkel1 from '../assets/images/cirkel1.svg'; 
+import cirkel2 from '../assets/images/cirkel2.svg'; 
+import cirkel3 from '../assets/images/cirkel3.svg';
+import cirkel4 from '../assets/images/cirkel4.svg'; 
+---
+
+<div class="lg:ml-[200px]">
+<div class="pt-[75%] flex justify-end lg:pt-14 lg:justify-center lg:pl-[340px]">
+    <Image src={cirkel1} alt="cirkel" class="h-32 w-32 lg:h-52 lg:w-52"></Image>
+</div>
+
+<div class="flex justify-start -mt-14 pl-10 lg:pl-0 lg:justify-end lg:-mt-24 lg:ml-[700px]">
+    <Image src={cirkel2} alt="cirkel" class="h-24 w-24 lg:h-48 lg:w-48"></Image>
+</div>
+
+<div class="flex justify-center pl-14 lg:justify-end lg:pr-[280px] lg:pl-0 lg:-mt-0 lg:ml-[450px]">
+    <Image src={cirkel3} alt="cirkel" class="h-20 w-20 lg:h-44 lg:w-44"></Image>
+</div>
+
+<div class="flex justify-start -mt-4 pl-8 lg:justify-end lg:pr-10 lg:-mt-8 lg:ml-[450px]">
+    <Image src={cirkel4} alt="cirkel" class="h-14 w-14 lg:h-40 lg:w-40"></Image>
+</div>
+
+</div>

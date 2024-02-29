@@ -1,17 +1,25 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from '../components/Button.astro';
+
+import Hero from '../components/Hero.astro';
+import Cirkel from '../components/Cirkel.astro';
+import Mig from '../components/Mig.astro';
+import Kompetencer from '../components/Kompetencer.astro';
 ---
-<MainLayout title="Titel">
+<MainLayout title="Laura praktik">
 	<article>
-		<p>Index indhold</p>
-		<p>Stefans nye starter</p>
-		<p class="prose">
-			En masse Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit doloremque accusantium nemo, et optio commodi esse placeat cumque totam modi, in incidunt aliquam, voluptatem debitis omnis beatae accusamus adipisci quasi?
 
-			hej hejse
+		<section>
+			<Hero></Hero>
+			<Cirkel></Cirkel>
+		</section>
 
-		</p>
+		<section>
+			<Mig></Mig>
+		</section>
 
-	</article>
+		<section>
+			<Kompetencer></Kompetencer>
+		</section>
 </MainLayout>
