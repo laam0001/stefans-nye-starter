@@ -4,12 +4,12 @@ import Portræt from '../assets/images/portræt.webp';
 ---
 
 <div class="grid lg:grid-cols-2 bg-[#E6D2D3] -mx-5 -mr-8 px-5 pt-5 mt-10 lg:-ml-16 lg:mr-32 lg:p-10">
-<div class="lg:w-96 lg:h-96 lg:flex lg:justify-items-center lg:mt-20 lg:ml-14">
-<Image src={Portræt} alt="Portræt af Laura Nyberg Amelung"></Image>
+<div class="lg:w-96 lg:h-96 lg:flex lg:justify-items-center lg:mt-20 lg:ml-14 fadeInLeft">
+<Image loading="lazy" src={Portræt} alt="Portræt af Laura Nyberg Amelung"></Image>
 </div>
 
 <div class="text-[#214B3F] lg:pr-20 ">
-<h2 class="uppercase font-bold pt-5 text-[20px] pb-5 lg:text-[40px]">Hvem er jeg?</h2>
+<h2  id="sektion1" class="uppercase font-bold pt-5 text-[20px] pb-5 lg:text-[40px]">Hvem er jeg?</h2>
 <p class="pb-5">Jeg hedder Laura Amelung, er 23 år og studerer til multimediedesigner på Københavns Erhvervsakademi.</p>
 <p class="pb-5 font-bold">Under praktikforløbet håber jeg meget på, at få mere erfaring i, at indgå i et team på tværs af faglige kompetencer, samt være med til at skabe nye digitale designløsninger og designidentiteter i form af ide -og konceptudvikling og prototyping til virksomheder.</p>
 <p class="pb-5">På multimediedesigner-uddannelsen, har jeg lært en masse spændende ting, om det gode og brugervenlige design, samt implementering af dette til websites.</p>
@@ -18,3 +18,13 @@ import Portræt from '../assets/images/portræt.webp';
 </div>
 
 </div>
+
+<script>
+	import {inView} from "motion";
+	const fadeInLeft = document.querySelector(".fadeInLeft");
+
+	inView(fadeInLeft, () => {
+		fadeInLeft.classList.add("animate__animated", "animate__fadeInLeft", "animate__slower", "animation-duration-2s");
+	})
+
+</script>
