@@ -1,5 +1,62 @@
 ---
 ---
-<div>
-Header
-</div>
+
+<div x-data="{ showmenu: false }" class="">
+    <div id="navbar" class="">
+      <nav id="desktopmenu" class="hidden lg:block">
+        <ul class="flex flex-row justify-evenly pt-10 text-[18px]">
+          <li
+            class="text-[#E0A3A5] hover:underline decoration-solid"
+          >
+            <a href="#sektion1">Hvem er jeg?</a>
+          </li>
+          <li
+            class="text-[#E0A3A5] hover:underline decoration-solid"
+          >
+            <a href="#sektion2">Mine kompetencer</a>
+          </li>
+          <li
+            class="text-[#E0A3A5] hover:underline decoration-solid"
+          >
+            <a href="#sektion3">Tidligere projekter</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="flex justify-end pr-8">
+      <button
+        id="burgermenu"
+        class="lg:hidden pt-10 text-[#E0A3A5] font-semibold uppercase"
+        x-on:click="showmenu = ! showmenu">Menu</button
+      >
+    </div>
+    </div>
+    <nav
+      id="mobilmenu"
+      class="flex flex-col pt-5"
+      x-show="showmenu"
+      x-transition
+      x-on:click="showmenu = false"
+      x-on:click.outside="showmenu = false"
+    >
+      <ul>
+        <li
+          class="text-[#E0A3A5] text-center py-4 hover:underline decoration-solid"
+        >
+          <a href="#sektion1">Hvem er jeg?</a>
+        </li>
+        <li
+          class="text-[#E0A3A5] text-center py-4 hover:underline decoration-solid"
+        >
+          <a href="#sektion2">Mine kompetencer</a>
+        </li>
+        <li
+          class="text-[#E0A3A5] text-center py-4 hover:underline decoration-solid"
+        >
+          <a href="#sektion3">Tidligere projekter</a>
+        </li>
+     
+         
+      </ul>
+    </nav>
+  </div>

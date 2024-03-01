@@ -2,91 +2,96 @@
 import { Image } from 'astro:assets';
 import punkter4 from '../assets/images/punkter4.svg';
 import punkter3 from '../assets/images/punkter3.svg';
+import line from '../assets/images/line.svg';
 ---
-<div class="vl"></div>
-<hr class="ml-48 w-64 lg:-ml-20 mt-10 lg:border-solid lg:border-[0.5%] bg-[#E6D2D3]">
-<h2 class="uppercase text-[#E6D2D3] text-[20px] text-center pt-8 pb-8">Mine kompetencer</h2>
 
-<div class="lg:grid lg:grid-cols-2">
-    <div>
+<div class="vl hidden lg:block"></div>
+<div class="lg:flex lg:justify-end lg:mx-0">
+<hr class="ml-48 w-64 lg:pr-[600px] lg:-mx-0 lg:ml-0 mt-10 lg:border-solid lg:border-[0.5%] bg-[#E6D2D3] hidden lg:block ">
+</div>
+
+<h2 class="uppercase text-[#E6D2D3] text-[20px] text-center pt-8 pb-8 lg:text-[40px]">Mine kompetencer</h2>
+
+<div class="lg:grid lg:grid-cols-2 ml-5">
+    <div class="lg:pl-14">
     <div class="grid grid-cols-3">
-        <p class="text-[#E0A3A5] text-[44px]">01</p>
-        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14">Figma</p>
-        <Image class="w-28 mt-6" src={punkter4} alt="4 ud af 5"></Image>
+        <p class="text-[#E0A3A5] text-[44px] lg:text-[64px]">01</p>
+        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14 lg:text-[22px] lg:mt-8">Figma</p>
+        <Image class="w-28 mt-6 ml-5 lg:mt-8" src={punkter4} alt="4 ud af 5"></Image>
       </div>
 
     <div class="grid grid-cols-3">
-        <p class="text-[#E0A3A5] text-[44px]">02</p>
-        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14">Illustrator</p>
-        <Image class="w-28 mt-6" src={punkter3} alt="3 ud af 5"></Image>
+        <p class="text-[#E0A3A5] text-[44px] lg:text-[64px]">02</p>
+        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14 lg:text-[22px] lg:mt-8">Illustrator</p>
+        <Image class="w-28 mt-6 ml-5 lg:mt-8" src={punkter3} alt="3 ud af 5"></Image>
       </div>
 
       <div class="grid grid-cols-3">
-        <p class="text-[#E0A3A5] text-[44px]">03</p>
-        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14">Adobe XD</p>
-        <Image class="w-28 mt-6" src={punkter4} alt="4 ud af 5"></Image>
+        <p class="text-[#E0A3A5] text-[44px] lg:text-[64px]">03</p>
+        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14 lg:text-[22px] lg:mt-8">Adobe XD</p>
+        <Image class="w-28 mt-6 ml-5 lg:mt-8" src={punkter4} alt="4 ud af 5"></Image>
       </div>
 
       <div class="grid grid-cols-3">
-        <p class="text-[#E0A3A5] text-[44px]">04</p>
-        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14">Premiere Pro</p>
-        <Image class="w-28 mt-6" src={punkter3} alt="3 ud af 5"></Image>
+        <p class="text-[#E0A3A5] text-[44px] lg:text-[64px]">04</p>
+        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14 lg:text-[22px] lg:mt-8">Premiere Pro</p>
+        <Image class="w-28 mt-6 ml-5 lg:mt-8" src={punkter3} alt="3 ud af 5"></Image>
       </div>
 
       <div class="grid grid-cols-3">
-        <p class="text-[#E0A3A5] text-[44px]">05</p>
-        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14">Avid media composer</p>
-        <Image class="w-28 mt-6" src={punkter3} alt="3 ud af 5"></Image>
+        <p class="text-[#E0A3A5] text-[44px] lg:text-[64px]">05</p>
+        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14 lg:text-[22px]  lg:mt-8">Avid media composer</p>
+        <Image class="w-28 mt-6 ml-5 lg:mt-8" src={punkter3} alt="3 ud af 5"></Image>
       </div>
 
       <div class="grid grid-cols-3">
-        <p class="text-[#E0A3A5] text-[44px]">06</p>
-        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14">HTML</p>
-        <Image class="w-28 mt-6" src={punkter3} alt="3 ud af 5"></Image>
+        <p class="text-[#E0A3A5] text-[44px] lg:text-[64px]">06</p>
+        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14 lg:text-[22px]  lg:mt-8">HTML</p>
+        <Image class="w-28 mt-6 ml-5 lg:mt-8" src={punkter3} alt="3 ud af 5"></Image>
       </div>
 
       <div class="grid grid-cols-3">
-        <p class="text-[#E0A3A5] text-[44px]">07</p>
-        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14">CSS</p>
-        <Image class="w-28 mt-6" src={punkter4} alt="4 ud af 5"></Image>
+        <p class="text-[#E0A3A5] text-[44px] lg:text-[64px]">07</p>
+        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14 lg:text-[22px]  lg:mt-8">CSS</p>
+        <Image class="w-28 mt-6 ml-5 lg:mt-8" src={punkter4} alt="4 ud af 5"></Image>
       </div>
     </div>
 
-    <div>
+    <div class="lg:pl-20">
       <div class="grid grid-cols-3">
-        <p class="text-[#E0A3A5] text-[44px]">08</p>
-        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14">Tailwind</p>
-        <Image class="w-28 mt-6" src={punkter4} alt="4 ud af 5"></Image>
+        <p class="text-[#E0A3A5] text-[44px] lg:text-[64px]">08</p>
+        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14 lg:text-[22px]  lg:mt-8">Tailwind</p>
+        <Image class="w-28 mt-6 ml-5 lg:mt-8" src={punkter4} alt="4 ud af 5"></Image>
       </div>
 
       <div class="grid grid-cols-3">
-        <p class="text-[#E0A3A5] text-[44px]">09</p>
-        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14">Animate.CSS</p>
-        <Image class="w-28 mt-6" src={punkter3} alt="3 ud af 5"></Image>
+        <p class="text-[#E0A3A5] text-[44px] lg:text-[64px]">09</p>
+        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14 lg:text-[22px]  lg:mt-8">Animate.CSS</p>
+        <Image class="w-28 mt-6 ml-5 lg:mt-8" src={punkter3} alt="3 ud af 5"></Image>
       </div>
 
       <div class="grid grid-cols-3">
-        <p class="text-[#E0A3A5] text-[44px]">10</p>
-        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14">Astro</p>
-        <Image class="w-28 mt-6" src={punkter3} alt="3 ud af 5"></Image>
+        <p class="text-[#E0A3A5] text-[44px] lg:text-[64px]">10</p>
+        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14 lg:text-[22px]  lg:mt-8">Astro</p>
+        <Image class="w-28 mt-6 ml-5 lg:mt-8" src={punkter3} alt="3 ud af 5"></Image>
       </div>
 
       <div class="grid grid-cols-3">
-        <p class="text-[#E0A3A5] text-[44px]">11</p>
-        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14">Content Creating</p>
-        <Image class="w-28 mt-6" src={punkter3} alt="3 ud af 5"></Image>
+        <p class="text-[#E0A3A5] text-[44px] lg:text-[64px]">11</p>
+        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14 lg:text-[22px]  lg:mt-8">Content Creating</p>
+        <Image class="w-28 mt-6 ml-5 lg:mt-8" src={punkter3} alt="3 ud af 5"></Image>
       </div>
 
       <div class="grid grid-cols-3">
-        <p class="text-[#E0A3A5] text-[44px]">12</p>
-        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14">UX Design</p>
-        <Image class="w-28 mt-6" src={punkter3} alt="3 ud af 5"></Image>
+        <p class="text-[#E0A3A5] text-[44px] lg:text-[64px]">12</p>
+        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14 lg:text-[22px]  lg:mt-8">UX Design</p>
+        <Image class="w-28 mt-6 ml-5 lg:mt-8" src={punkter3} alt="3 ud af 5"></Image>
       </div>
 
       <div class="grid grid-cols-3">
-        <p class="text-[#E0A3A5] text-[44px]">13</p>
-        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14">Prototyping</p>
-        <Image class="w-28 mt-6" src={punkter4} alt="4 ud af 5"></Image>
+        <p class="text-[#E0A3A5] text-[44px] lg:text-[64px]">13</p>
+        <p class="uppercase text-[#E6D2D3] mt-6 -ml-14 lg:text-[22px] lg:mt-8">Prototyping</p>
+        <Image class="w-28 mt-6 ml-5 lg:mt-8" src={punkter4} alt="4 ud af 5"></Image>
       </div>
     </div>
 
@@ -100,3 +105,13 @@ import punkter3 from '../assets/images/punkter3.svg';
       position:absolute;
       margin-left: 300px; 
     }
+
+    @media (min-width: 1024px) {
+        .vl{
+            height: 170px;
+            display: flex;
+            margin-left: 900px;
+       
+        }
+    }
+    </style>

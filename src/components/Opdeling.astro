@@ -1,0 +1,34 @@
+---
+import { Image } from 'astro:assets';
+import cirkel1 from '../assets/images/cirkel1.svg'; 
+import cirkel2 from '../assets/images/cirkel2.svg'; 
+import cirkel3 from '../assets/images/cirkel3.svg';
+import cirkel4 from '../assets/images/cirkel4.svg'; 
+---
+
+<div class="grid grid-cols-2">
+<div class="pt-20 lg:pt-24 lg:mx-40 mx-5">
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+	<dotlottie-player src="https://lottie.host/4b13c983-0041-44e3-a6d3-2f2c5776d753/DqybsgxtD7.json" background="transparent" speed="1" class="w-[200px] h-[200px] lg:w-[400px] lg:h-[400px]" loop autoplay></dotlottie-player>
+
+</div>
+
+<div class=" flex justify-end lg:pt-0 lg:justify-start pt-10">
+    <Image src={cirkel1} alt="cirkel" class="h-28 w-28 lg:h-48 lg:w-48 mx-10"></Image>
+</div>
+
+<div class="flex justify-end -mt-24 -mr-56 lg:justify-end lg:-mt-[340px] lg:-mr-[600px]">
+    <Image src={cirkel2} alt="cirkel" class="h-20 w-20 lg:h-44 lg:w-44 mx-10"></Image>
+</div>
+
+<div class="flex justify-center -mt-2 lg:justify-end lg:pr-[350px] lg:pl-0 lg:-mt-[200px]">
+    <Image src={cirkel3} alt="cirkel" class="h-20 w-20 lg:h-40 lg:w-40 mx-10"></Image>
+</div>
+
+<div class="flex justify-end -mt-10 -mr-52 lg:justify-end lg:-mt-10 lg:-mr-[550px]">
+    <Image src={cirkel4} alt="cirkel" class="h-14 w-14 lg:h-32 lg:w-32 mx-10 hidden lg:block"></Image>
+</div>
+
+</div>
+</div>
